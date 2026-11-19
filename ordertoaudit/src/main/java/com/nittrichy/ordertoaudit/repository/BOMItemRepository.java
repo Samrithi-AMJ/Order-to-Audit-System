@@ -1,0 +1,12 @@
+package com.nittrichy.ordertoaudit.repository;
+
+import com.nittrichy.ordertoaudit.entity.BOMItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface BOMItemRepository extends JpaRepository<BOMItem, Long> {
+    List<BOMItem> findByBomId(Long bomId);
+}
