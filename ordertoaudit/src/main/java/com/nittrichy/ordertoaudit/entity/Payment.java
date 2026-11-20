@@ -51,3 +51,4 @@ public class Payment extends BaseEntity {
     @JoinColumn(name = "recorded_by_id")
     private User recordedBy;
 }
+

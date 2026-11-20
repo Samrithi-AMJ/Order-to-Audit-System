@@ -16,3 +16,4 @@ public interface ProductionRunRepository extends JpaRepository<ProductionRun, Lo
     List<ProductionRun> findByStatus(ProductionStatus status);
     List<ProductionRun> findByRunDateBetween(LocalDate startDate, LocalDate endDate);
 }
+

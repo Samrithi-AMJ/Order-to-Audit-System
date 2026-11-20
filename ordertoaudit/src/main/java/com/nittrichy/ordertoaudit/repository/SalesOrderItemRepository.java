@@ -11,3 +11,4 @@ public interface SalesOrderItemRepository extends JpaRepository<SalesOrderItem, 
     List<SalesOrderItem> findBySalesOrderId(Long salesOrderId);
     List<SalesOrderItem> findByProductId(Long productId);
 }
+

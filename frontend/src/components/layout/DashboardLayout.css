@@ -1,0 +1,282 @@
+﻿.erp-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f4f6fa;
+  color: #172033;
+}
+
+.erp-sidebar {
+  width: 255px;
+  background: #111c32;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 100vh;
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 30;
+}
+
+.erp-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 25px 20px 28px;
+  border-bottom: 1px solid #29364b;
+}
+
+.erp-brand-icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 11px;
+  background: #f28c38;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.erp-brand h2 {
+  font-size: 17px;
+  margin: 0;
+  letter-spacing: -0.4px;
+}
+
+.erp-brand span {
+  display: block;
+  font-size: 9px;
+  color: #9ba9bd;
+  letter-spacing: 1.3px;
+  margin-top: 4px;
+}
+
+.sidebar-section-label {
+  color: #7e8da5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 28px 22px 12px;
+}
+
+.erp-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 12px;
+  overflow-y: auto;
+}
+
+.erp-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #b4bfd0;
+  text-decoration: none;
+  padding: 12px 13px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.erp-nav-link:hover {
+  background: #202e46;
+  color: #fff;
+}
+
+.erp-nav-link.active {
+  background: #f28c38;
+  color: #fff;
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 17px 14px;
+  border-top: 1px solid #29364b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar,
+.topbar-avatar {
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #34445f;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+
+.user-details strong {
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-details span {
+  font-size: 10px;
+  color: #9ba9bd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logout-button {
+  border: 0;
+  background: transparent;
+  color: #aebbd0;
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #29364b;
+  color: #fff;
+}
+
+.erp-main {
+  margin-left: 255px;
+  width: calc(100% - 255px);
+  min-width: 0;
+}
+
+.erp-topbar {
+  min-height: 90px;
+  padding: 18px 32px;
+  background: #fff;
+  border-bottom: 1px solid #e8ebf1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.erp-topbar h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+
+.erp-topbar p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #8490a3;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.topbar-avatar {
+  background: #fff0e3;
+  color: #d87325;
+}
+
+.erp-content {
+  padding: 30px 32px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.sidebar-close,
+.mobile-menu-button,
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .erp-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .erp-sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  .erp-main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar-close {
+    display: block;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile-menu-button {
+    display: grid;
+    place-items: center;
+    border: 0;
+    background: #f2f4f8;
+    color: #26344b;
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    border: 0;
+    background: #0008;
+  }
+
+  .erp-topbar {
+    padding: 16px 20px;
+  }
+
+  .erp-content {
+    padding: 22px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .erp-topbar {
+    gap: 10px;
+  }
+
+  .erp-topbar h1 {
+    font-size: 18px;
+  }
+
+  .erp-topbar p {
+    font-size: 10px;
+  }
+
+  .topbar-user span {
+    display: none;
+  }
+
+  .erp-content {
+    padding: 18px 14px;
+  }
+}

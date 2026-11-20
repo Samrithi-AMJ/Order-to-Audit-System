@@ -10,3 +10,4 @@ import java.util.List;
 public interface BOMItemRepository extends JpaRepository<BOMItem, Long> {
     List<BOMItem> findByBomId(Long bomId);
 }
+

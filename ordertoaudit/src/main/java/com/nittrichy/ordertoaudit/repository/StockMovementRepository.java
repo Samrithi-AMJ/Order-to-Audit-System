@@ -23,3 +23,4 @@ public interface StockMovementRepository extends JpaRepository<StockMovement, Lo
     Optional<StockMovement> findTopByPackagingMaterialIdOrderByMovementDateDescIdDesc(Long packagingMaterialId);
     Optional<StockMovement> findTopByProductIdOrderByMovementDateDescIdDesc(Long productId);
 }
+

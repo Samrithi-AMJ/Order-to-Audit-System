@@ -11,3 +11,4 @@ public interface MaterialConsumptionRepository extends JpaRepository<MaterialCon
     List<MaterialConsumption> findByProductionRunId(Long productionRunId);
     List<MaterialConsumption> findByVarianceFlagTrue();
 }
+

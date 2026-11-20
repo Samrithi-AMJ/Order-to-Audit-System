@@ -21,3 +21,4 @@ public class ErrorResponse {
     private Map<String, String> validationErrors;
     private Map<String, Object> details;
 }
+

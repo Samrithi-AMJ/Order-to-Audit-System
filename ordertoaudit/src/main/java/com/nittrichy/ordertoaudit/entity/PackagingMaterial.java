@@ -48,3 +48,4 @@ public class PackagingMaterial extends BaseEntity {
     @Column(nullable = false)
     private boolean active = true;
 }
+

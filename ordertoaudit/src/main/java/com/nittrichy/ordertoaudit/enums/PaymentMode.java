@@ -8,3 +8,4 @@ public enum PaymentMode {
     CHEQUE,
     CREDIT_NOTE
 }
+

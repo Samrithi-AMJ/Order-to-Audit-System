@@ -11,6 +11,8 @@ import java.util.Optional;
 public interface BOMRepository extends JpaRepository<BOM, Long> {
     Optional<BOM> findByBomCode(String bomCode);
     Optional<BOM> findByProductIdAndActiveTrue(Long productId);
+    List<BOM> findAllByProductIdAndActiveTrue(Long productId);
     List<BOM> findByProductId(Long productId);
     boolean existsByBomCode(String bomCode);
 }
+

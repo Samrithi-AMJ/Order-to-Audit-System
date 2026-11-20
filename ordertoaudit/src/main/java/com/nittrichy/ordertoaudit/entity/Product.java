@@ -57,3 +57,4 @@ public class Product extends BaseEntity {
     @Column(nullable = false)
     private boolean active = true;
 }
+

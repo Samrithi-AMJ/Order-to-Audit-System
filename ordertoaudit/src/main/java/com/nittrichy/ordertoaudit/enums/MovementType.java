@@ -10,3 +10,4 @@ public enum MovementType {
     STOCK_ADJUSTMENT,
     SALES_RETURN
 }
+

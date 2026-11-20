@@ -9,3 +9,4 @@ public enum ReferenceType {
     MANUAL_ADJUSTMENT,
     INITIAL_SETUP
 }
+

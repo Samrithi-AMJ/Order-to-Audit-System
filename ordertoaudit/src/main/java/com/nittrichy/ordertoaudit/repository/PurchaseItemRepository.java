@@ -10,3 +10,4 @@ import java.util.List;
 public interface PurchaseItemRepository extends JpaRepository<PurchaseItem, Long> {
     List<PurchaseItem> findByPurchaseId(Long purchaseId);
 }
+

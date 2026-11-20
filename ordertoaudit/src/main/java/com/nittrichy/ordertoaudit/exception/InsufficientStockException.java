@@ -43,3 +43,4 @@ public class InsufficientStockException extends RuntimeException {
         return shortageQuantity;
     }
 }
+

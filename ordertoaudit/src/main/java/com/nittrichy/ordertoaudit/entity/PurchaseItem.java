@@ -44,3 +44,4 @@ public class PurchaseItem extends BaseEntity {
     @Column(name = "total_amount", precision = 14, scale = 2, nullable = false)
     private BigDecimal totalAmount;
 }
+

@@ -37,7 +37,7 @@ public class RawMaterial extends BaseEntity {
     private BigDecimal currentStock = BigDecimal.ZERO;
 
     @Builder.Default
-    @Column(name = "weighted_avg_cost", precision = 14, scale = 2, nullable = false)
+    @Column(name = "weighted_avg_cost", precision = 14, scale = 4, nullable = false)
     private BigDecimal weightedAvgCost = BigDecimal.ZERO;
 
     @Builder.Default
@@ -48,3 +48,4 @@ public class RawMaterial extends BaseEntity {
     @Column(nullable = false)
     private boolean active = true;
 }
+

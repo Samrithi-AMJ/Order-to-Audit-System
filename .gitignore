@@ -32,3 +32,9 @@ yarn-error.log*
 .settings/
 .DS_Store
 Thumbs.db
+
+*.bak
+.ordertoaudit-runtime-tmp/
+ordertoaudit/Invoice-*.pdf
+ordertoaudit/Sales-Register.*
+ordertoaudit/Stock-Ledger.*

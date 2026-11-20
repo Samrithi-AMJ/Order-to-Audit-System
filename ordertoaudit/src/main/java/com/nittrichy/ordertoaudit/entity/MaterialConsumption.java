@@ -58,3 +58,4 @@ public class MaterialConsumption extends BaseEntity {
     @Column(name = "variance_flag", nullable = false)
     private boolean varianceFlag = false; // true if absolute variance > 3%
 }
+

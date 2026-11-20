@@ -8,3 +8,4 @@ public enum PackagingType {
     TAPE,
     OTHER
 }
+

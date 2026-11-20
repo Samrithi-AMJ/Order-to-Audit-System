@@ -38,6 +38,10 @@ public class InvoiceItem extends BaseEntity {
     @Column(name = "taxable_amount", precision = 14, scale = 2, nullable = false)
     private BigDecimal taxableAmount;
 
+    @Column(name = "gst_rate", precision = 5, scale = 2)
+    @Builder.Default
+    private BigDecimal gstRate = BigDecimal.ZERO;
+
     @Builder.Default
     @Column(name = "cgst_amount", precision = 14, scale = 2)
     private BigDecimal cgstAmount = BigDecimal.ZERO;
@@ -53,3 +57,4 @@ public class InvoiceItem extends BaseEntity {
     @Column(name = "total_amount", precision = 14, scale = 2, nullable = false)
     private BigDecimal totalAmount;
 }
+

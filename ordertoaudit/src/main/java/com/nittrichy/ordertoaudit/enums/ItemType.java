@@ -5,3 +5,4 @@ public enum ItemType {
     PACKAGING_MATERIAL,
     FINISHED_GOODS
 }
+

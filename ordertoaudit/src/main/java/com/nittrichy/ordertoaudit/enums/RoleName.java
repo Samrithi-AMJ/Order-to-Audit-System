@@ -7,3 +7,4 @@ public enum RoleName {
     ACCOUNTANT,
     OWNER
 }
+

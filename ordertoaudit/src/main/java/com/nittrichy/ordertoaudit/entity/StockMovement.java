@@ -81,3 +81,4 @@ public class StockMovement extends BaseEntity {
     @JoinColumn(name = "created_by_id")
     private User createdBy;
 }
+

@@ -44,3 +44,4 @@ public class BOMItem extends BaseEntity {
     @Column(length = 255)
     private String notes;
 }
+

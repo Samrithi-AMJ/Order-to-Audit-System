@@ -55,3 +55,4 @@ public class BOM extends BaseEntity {
         item.setBom(null);
     }
 }
+
